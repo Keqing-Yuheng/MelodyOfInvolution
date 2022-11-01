@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MelodyOfInvolution", "MelodyOfInvolution\MelodyOfInvolution.vcxproj", "{FCDA496B-0766-4FD2-BDE1-986568629702}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MOI_SpeedUpright", "MOI_SpeedUpright\MOI_SpeedUpright.vcxproj", "{BB54920F-CE64-48C8-865B-81DB8FD26D87}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Launcher - Melody Of Involution", "Launcher - Melody Of Involution\Launcher - Melody Of Involution.vcxproj", "{34E5D2A4-501B-4511-82AE-7D7785ED6C95}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MOI_ImgDisplay", "MOI_ImgDisplay\MOI_ImgDisplay.vcxproj", "{0A2F803F-4FAB-4307-A89D-86AD47AE8FB5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MOI_AdventureMode", "MOI_AdventureMode\MOI_AdventureMode.vcxproj", "{DC389A8D-58E7-40C1-B2B4-5FFDA388C0D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCDA496B-0766-4FD2-BDE1-986568629702}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FCDA496B-0766-4FD2-BDE1-986568629702}.Debug|Win32.Build.0 = Debug|Win32
+		{FCDA496B-0766-4FD2-BDE1-986568629702}.Release|Win32.ActiveCfg = Release|Win32
+		{FCDA496B-0766-4FD2-BDE1-986568629702}.Release|Win32.Build.0 = Release|Win32
+		{BB54920F-CE64-48C8-865B-81DB8FD26D87}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BB54920F-CE64-48C8-865B-81DB8FD26D87}.Debug|Win32.Build.0 = Debug|Win32
+		{BB54920F-CE64-48C8-865B-81DB8FD26D87}.Release|Win32.ActiveCfg = Release|Win32
+		{BB54920F-CE64-48C8-865B-81DB8FD26D87}.Release|Win32.Build.0 = Release|Win32
+		{34E5D2A4-501B-4511-82AE-7D7785ED6C95}.Debug|Win32.ActiveCfg = Debug|Win32
+		{34E5D2A4-501B-4511-82AE-7D7785ED6C95}.Debug|Win32.Build.0 = Debug|Win32
+		{34E5D2A4-501B-4511-82AE-7D7785ED6C95}.Release|Win32.ActiveCfg = Release|Win32
+		{34E5D2A4-501B-4511-82AE-7D7785ED6C95}.Release|Win32.Build.0 = Release|Win32
+		{0A2F803F-4FAB-4307-A89D-86AD47AE8FB5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0A2F803F-4FAB-4307-A89D-86AD47AE8FB5}.Debug|Win32.Build.0 = Debug|Win32
+		{0A2F803F-4FAB-4307-A89D-86AD47AE8FB5}.Release|Win32.ActiveCfg = Release|Win32
+		{0A2F803F-4FAB-4307-A89D-86AD47AE8FB5}.Release|Win32.Build.0 = Release|Win32
+		{DC389A8D-58E7-40C1-B2B4-5FFDA388C0D5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DC389A8D-58E7-40C1-B2B4-5FFDA388C0D5}.Debug|Win32.Build.0 = Debug|Win32
+		{DC389A8D-58E7-40C1-B2B4-5FFDA388C0D5}.Release|Win32.ActiveCfg = Release|Win32
+		{DC389A8D-58E7-40C1-B2B4-5FFDA388C0D5}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
