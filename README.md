@@ -6,6 +6,7 @@ GitHub @ Keqing-Yuheng
 ## Attention
 - There may be some problems in the code, for Melody Of Involution is just a simple project. For instance, unsafe functions like `scanf()` and `strcpy()` are used several times. I strongly recommand that you ignore them if you would like to read the code.
 - The following part of the document will be written in **Simplified Chinese**. If you fancy reading the English version, click [HERE](https://github.com/Keqing-Yuheng/MelodyOfInvolution/blob/main/README-English.md "README-English.md").
+
 ## 如何游玩
 运行**Launcher - Melody Of Involution.exe**启动Melody Of Involution  
 然后按程序内提示操作  
@@ -78,6 +79,7 @@ Melody Of Involution主程序
 参数:  
 - `-mute` 关闭音频
 - `-silent` 关闭音频
+
 #### MOI_AdventureMode.exe
 Melody Of Involution冒险模式  
 可通过启动器打开  
@@ -90,6 +92,7 @@ Melody Of Involution曲绘查看器
 - 参数2 指定窗口标题 缺省则为`Melody Of Involution`
 - 参数3 若为`Still`则换用`SetDIBitsToDevice()`输出 若为其他则不变
 - 若传入更多参数，将只取前2个参数分别作为位图路径与窗口标题
+
 #### MOI_SpeedUpright.exe
 Melody Of Involution自动速率校正工具  
 参数:指定用于校正的项目 缺省则为MOI_Test_Project.txt  
@@ -107,6 +110,7 @@ Melody Of Involution基本配置文件
 - 第6位:0-F的16进制数(不区分大小写) 设置其他程序前景色
 - 第7位:0-关闭音频/1-开启音频
 - 第8位:0-关闭曲绘/1-开启曲绘
+
 **第2行**
 播放器路径 填`#NULL`表示空  
 #### MOI_ExpData.ini
@@ -129,6 +133,7 @@ Melody Of Involution关卡索引(尚未完善)
 - 第19位:分隔符(建议使用`/`)
 - 第20位:项目音频开关 0-关 1-开
 - 第21位:项目曲绘开关 0-关 1-开
+
 **第2行**
 谱面文件路径(*.lrc) 必填  
 **第3行**
@@ -142,9 +147,11 @@ Melody Of Involution关卡索引(尚未完善)
 - 24种Note
 - `#` 与空格等效
 - 空格
+
 **无效字符**
 - `$` 将会被忽略
 - `\n`(换行符) 将会被忽略
+
 每读取4个有效字符即作为一行  
 按显示界面换行是考虑谱面文件本身可读性  
 **注意事项**
