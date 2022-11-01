@@ -328,6 +328,9 @@ void reader(char* item)
 			case ':':  //\:用于分隔讲述者与讲述内容
 				printf(":\n");
 				continue;
+			case '|':  //\|用于换行
+				printf("\n");
+				continue;
 			default:  //键入\目的 不是需要功能 而是输出\字符
 				printf("\\");
 				continue;

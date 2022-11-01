@@ -48,7 +48,6 @@ int main(int argc, char *argv[])
 	if (argc >= 2)
 	{
 		if ((!strcmp(argv[1], "-mute")) || (!strcmp(argv[1], "-silent")))	audio_config = 0;
-		else if (!strcmp(argv[1], "-flac"))	audio_config = 2;
 		if (argc >= 3 && (!strcmp(argv[2], "-cheat_enabled")))	cheat_disabled = 0;
 		moi_brief();
 		printf("*Advanced Config Enabled:\n");
@@ -59,10 +58,7 @@ int main(int argc, char *argv[])
 			printf("Mute/Silent\n");
 			break;
 		case 1:
-			printf("MP3\n");
-			break;
-		case 2:
-			printf("FLAC\n");
+			printf("ON\n");
 			break;
 		}
 		if (!cheat_disabled)	printf("Debugger Check Value Ignored\n");
@@ -904,15 +900,17 @@ void complete(char item[], char lrcfile[], int len_int, int note_int, int target
 		if (in_char == 'Y' || in_char == 'y')
 		{
 			char score_str[8] = {}, transfer_str[49] = {};
-			score_str[6] = score / 1000000 % 10 + 48;  //id=input%10;
-			score_str[5] = score / 100000 % 10 + 48;	  //ic=input/10%10;
-			score_str[4] = score / 10000 % 10 + 48;	  //ib=input/100%10;
-			score_str[3] = score / 1000 % 10 + 48;	  //ia=input/1000%10;
+			/*
+			score_str[6] = score / 1000000 % 10 + 48;
+			score_str[5] = score / 100000 % 10 + 48;
+			score_str[4] = score / 10000 % 10 + 48;
+			score_str[3] = score / 1000 % 10 + 48;
 			score_str[2] = score / 100 % 10 + 48;
 			score_str[1] = score / 10 % 10 + 48;
 			score_str[0] = score % 10 + 48;
+			*/
+			itoa(score, score_str, 10);
 			strcpy(transfer_str, ADVENTURE_EXE);
-			strcat(transfer_str, " + ");
 			strcat(transfer_str, " ");
 			strcat(transfer_str, score_str);
 			strcat(transfer_str, " ");
