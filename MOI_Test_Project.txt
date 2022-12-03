@@ -1,0 +1,17 @@
+0140/000260/000240/00
+MOI_Test_Project.lrc
+
+
+--Description--
+Melody Of Involution
+GitHub @ Keqing-Yuheng
+Project: MOI_Test_Project
+Project Format: MOI R1.1
+LRC Author: Keqing-Yuheng
+LRC Version: 1
+LRC Created Version: MOI R1.0
+LRC Updated Version: MOI R1.1
+
+自动速率校正工具MOI_SpeedUpright默认项目
+也可用于检查键盘输入是否存在问题
+建议每种音符只短按 看到音符被消除即可

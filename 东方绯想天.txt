@@ -1,0 +1,15 @@
+0100/001000/001000/10
+东方绯想天.lrc
+https://music.163.com/#/song?id=22765919
+
+--Description--
+Melody Of Involution
+GitHub @ Keqing-Yuheng
+Project: 东方绯想天
+Project Format: MOI R1.1
+Project Codec: ANSI/GB2312/GBK/GB18030
+LRC Author: Keqing-Yuheng
+LRC Version: 1
+LRC Created Version: MOI R1.1
+LRC Updated Version: MOI R1.1
+[This project is an ALPHA version and is not completed!]
