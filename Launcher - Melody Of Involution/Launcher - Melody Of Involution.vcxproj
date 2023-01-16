@@ -14,6 +14,7 @@
     <ProjectGuid>{34E5D2A4-501B-4511-82AE-7D7785ED6C95}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>LauncherMelodyOfInvolution</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

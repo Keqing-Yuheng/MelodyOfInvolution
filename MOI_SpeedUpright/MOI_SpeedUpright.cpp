@@ -24,7 +24,7 @@ inline void moi_u()
 {
 	printf("Melody Of Involution\n"
 		   "Speed Upright\n"
-		   "Version Release 1.1\n"
+		   "Version Release 1.2\n"
 		  );
 }
 
@@ -51,7 +51,7 @@ int main(int argc, char* argv[])
 		return 0;
 	}
 	fclose(fp);
-	SetConsoleTitleA("Melody Of Involution - Speed Upright [R1.1]");
+	SetConsoleTitleA("Melody Of Involution - Speed Upright [R1.2]");
 	system("cls");
 	fconfig = fopen(CONFIG_DATA, "r");
 	if (fconfig != NULL)  //试用fseek(fp, 2, 0);更改2
@@ -86,16 +86,16 @@ int main(int argc, char* argv[])
 int play_su(char item[], int audio_config)
 {
 	bool constant_no_debugger = 1, upright_failed = 0, show_audio_proj = 1, show_image_proj = 1;
-	char in = 0, mp3file[136] = {}, lrcfile[133] = {}, bmpfile[136] = {}, fin_str[22] = {};
+	char in = 0, mp3file[136] = {}, lrcfile[136] = {}, bmpfile[136] = {}, fin_str[22] = {};
 	char head_char[20] = { '|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '>', '|', '|', '>', '|', '|', '>', '|' }, warn_char[4] = { '_', '_', '_', '_' };
 	int i = 0, clear = 0, lost = 0, len_int = 0, note_int = 0, target_speed = 0, pause = 0, click = 0, t_start = 0, t_end = 0;
 	FILE *fitem = NULL, *fsong = NULL;
 	system("color 08");	 //改变颜色
 	memset(space, ' ', sizeof(space));
-	for (int isetline = 0; isetline <= 20; isetline++)	space[isetline][4] = 0;
+	for (int isetline = 0; isetline <= 19; isetline++)	space[isetline][4] = 0;
 	fitem = fopen(item, "r");
-	fgets(fin_str, 23, fitem);
-	fgets(lrcfile, 136, fitem);
+	fgets(fin_str, 22, fitem);
+	fgets(lrcfile, 133, fitem);
 	fgets(mp3file, 136, fitem);
 	fgets(bmpfile, 136, fitem);
 	fclose(fitem);
@@ -505,7 +505,7 @@ int play_su(char item[], int audio_config)
 			if ((!_kbhit()) && (iloop <= 5))	continue;
 			break;
 		}
-		for (int imovline = 19; imovline >= 0; imovline--)
+		for (int imovline = 18; imovline >= 0; imovline--)	//向下移动内容 由18行复制到19行起始 0行复制到1行结束
 		{
 			for (int imovcol = 0; imovcol <= 3; imovcol++)
 				space[imovline + 1][imovcol] = space[imovline][imovcol];

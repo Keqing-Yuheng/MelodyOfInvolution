@@ -28,7 +28,7 @@ inline void moi_a()
 {
 	printf("Melody of Involution\n"
 		   "Adventure Mode\n"
-		   "Version Release 1.1\n");
+		   "Version Release 1.2\n");
 }
 
 int main(int argc, char* argv[])
@@ -36,7 +36,7 @@ int main(int argc, char* argv[])
 	char color_set[9] = "color 0f";
 	FILE *fconfig = NULL;
 	if (argc == 3)	return registry(argv[1], argv[2]);
-	SetConsoleTitleA("Melody Of Involution - Adventure Mode [R1.1]");
+	SetConsoleTitleA("Melody Of Involution - Adventure Mode [R1.2]");
 	fconfig = fopen(CONFIG_DATA, "r");
 	if (fconfig != NULL)
 	{

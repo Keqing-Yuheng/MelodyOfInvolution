@@ -14,7 +14,7 @@ int select_l();
 inline void moi()
 {
 	printf("Melody Of Involution\n"
-		   "Version Release 1.1\n"
+		   "Version Release 1.2\n"
 		   "GitHub @ Keqing-Yuheng\n"
 		  );
 }
@@ -32,7 +32,7 @@ int main(int argc, char* argv[])
 	}
 	system("mode con cols=60 lines=17");
 	system(color_set);
-	SetConsoleTitleA("Melody Of Involution [R1.1]");  //SetConsoleTitleA()不会显示"管理员:..." 而title命令会显示"管理员:...
+	SetConsoleTitleA("Melody Of Involution [R1.2]");  //SetConsoleTitleA()不会显示"管理员:..." 而title命令会显示"管理员:...
 	system("cls");
 	printf("Melody Of Involution");	 //注意不要换行 以免光标遮挡图片 可以考虑并把光标放远一点而美观
 	ImgDisplay_Wipe("MOI_Welcome.bmp", "#DEFAULT_TITLE");

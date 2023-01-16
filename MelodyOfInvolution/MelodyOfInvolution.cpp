@@ -6,7 +6,7 @@
 #include<windows.h>
 
 const int internal_upright = 0;
-const char* MOI_TITLE = "Melody Of Involution [R1.1]";
+const char* MOI_TITLE = "Melody Of Involution [R1.2]";
 const char* ADVENTUREMODE_REGID = "MOI_Main_Registration";
 const char* ADVENTURE_EXE = "MOI_AdventureMode.exe";
 const char* IMGDISPLAY = "MOI_ImgDisplay.exe";
@@ -26,14 +26,14 @@ void complete(char item[], char lrcfile[], int len_int, int note_int, int target
 inline void moi_full()
 {
 	printf("Melody Of Involution\n"
-		   "Version Release 1.1\n"
+		   "Version Release 1.2\n"
 		   "GitHub @ Keqing-Yuheng\n"
 		  );
 }
 inline void moi_brief()
 {
 	printf("Melody Of Involution\n"
-		   "Version Release 1.1\n"
+		   "Version Release 1.2\n"
 		  );
 }
 
@@ -229,6 +229,7 @@ int main(int argc, char *argv[])
 			   "然后按Enter以进入\n"
 			   "(键入*列出剧情序号索引)\n"
 			  );
+		fflush(stdin);
 		scanf("%[^\n]", item);  //输入
 		fflush(stdin);
 		len = strlen(item);
@@ -388,7 +389,9 @@ int main(int argc, char *argv[])
 			printf("错误:未找到:%s!\n", item);
 			printf("检查文件路径是否正确及是否含有空格\n");
 			printf("按任意键然后Enter以退出...");
+			fflush(stdin);
 			getchar();
+			fflush(stdin);
 			return 0;
 		}
 		else
@@ -398,7 +401,9 @@ int main(int argc, char *argv[])
 			play(item, audio_config);
 		}
 		printf("按任意键然后Enter以退出...");
+		fflush(stdin);
 		getchar();
+		fflush(stdin);
 		break;
 	} while (1);
 	return 0;
@@ -413,7 +418,7 @@ void play(char item[], int audio_config)
 	memset(space, ' ', sizeof(space));
 	for (int isetline = 0; isetline <= 20; isetline++)	space[isetline][4] = 0;
 	fitem = fopen(item, "r");
-	fgets(fin_str, 23, fitem);
+	fgets(fin_str, 22, fitem);
 	fgets(lrcfile, 136, fitem);
 	fgets(mp3file, 136, fitem);
 	fgets(bmpfile, 136, fitem);
@@ -824,12 +829,15 @@ void play(char item[], int audio_config)
 			if ((!_kbhit()) && (iloop <= 5))	continue;
 			break;
 		}
-		for (int imovline = 19; imovline >= 0; imovline--)
+		for (int imovline = 18; imovline >= 0; imovline--)	//向下移动内容 由18行复制到19行起始 0行复制到1行结束
 		{
 			for (int imovcol = 0; imovcol <= 3; imovcol++)
 				space[imovline + 1][imovcol] = space[imovline][imovcol];
 		}
-		Sleep(pause + internal_upright);
+		if (pause + internal_upright > 0)	//避免Sleep(0)在时间已经不足时再次占用时间
+		{
+			Sleep(pause + internal_upright);
+		}
 	}
 	t_end = clock();
 	fclose(fsong);
@@ -909,7 +917,7 @@ void complete(char item[], char lrcfile[], int len_int, int note_int, int target
 			score_str[1] = score / 10 % 10 + 48;
 			score_str[0] = score % 10 + 48;
 			*/
-			itoa(score, score_str, 10);
+			_itoa(score, score_str, 10);
 			strcpy(transfer_str, ADVENTURE_EXE);
 			strcat(transfer_str, " ");
 			strcat(transfer_str, score_str);
